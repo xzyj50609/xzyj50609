@@ -12,6 +12,7 @@
 | [pdfdir-ai](https://github.com/xzyj50609/pdfdir-ai) | AI 辅助生成 PDF 目录书签 |
 | [kaoyan-question-classification](https://github.com/xzyj50609/kaoyan-question-classification) | 考研真题自动分类 |
 | [cc-switch-bypass-permissions](https://github.com/xzyj50609/cc-switch-bypass-permissions) | 修复 CC Switch 打开 Claude Code 不是完全访问模式 |
+| [cc-switch-chinese-path-crlf-bug](https://github.com/xzyj50609/cc-switch-chinese-path-crlf-bug) | CC Switch 中文路径报 `/d` 不是命令——换行符 bug 根因与修复 |
 
 ---
 
@@ -20,6 +21,10 @@
 **[终于查明白了：CC Switch 打开的 Claude Code 为什么一直不是完全访问模式](https://github.com/xzyj50609/cc-switch-bypass-permissions)**
 
 Fix CC Switch launching Claude Code without bypassPermissions on Windows —— 含完整排障过程、一键安装脚本、回滚方法。
+
+**[CC Switch 打开中文路径报 '/d' 不是命令——换行符 bug 完整排查](https://github.com/xzyj50609/cc-switch-chinese-path-crlf-bug)**
+
+CC Switch 3.16.3 的启动 bat 混合换行（LF + CRLF），在中文多字节路径下导致 cmd.exe 行解析错位。含源码分析、复现矩阵、三种修复方案。
 
 ---
 
